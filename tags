@@ -1,0 +1,104 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BINARY_DIR	Makefile	/^BINARY_DIR = bin$/;"	m
+CONVERT_OBJS	Makefile	/^CONVERT_OBJS= $(addprefix $(OBJECT_DIR)\/, $(CONVERT_SRC))$/;"	m
+CONVERT_SRC	Makefile	/^CONVERT_SRC = convert.o process_edgelist.o process_adjlist.o edgelist_map.o radix_sort.o process_in_edge.o k_way_merge.o$/;"	m
+CONVERT_TARGET	Makefile	/^CONVERT_TARGET=$(BINARY_DIR)\/convert$/;"	m
+CUSTOM_EOF	headers/convert.h	12;"	d
+CXX	Makefile	/^CXX?= g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS?= -O3 -DDEBUG -Wall -Wno-unused-function -I.\/$(HEADERS_PATH)$/;"	m
+EDGE_BUFFER_LEN	headers/convert.h	14;"	d
+HEADERS_PATH	Makefile	/^HEADERS_PATH = headers$/;"	m
+LINE_FORMAT	convert/process_edgelist.cpp	23;"	d	file:
+MAX_LINE_LEN	headers/convert.h	13;"	d
+OBJECT_DIR	Makefile	/^OBJECT_DIR = obj$/;"	m
+READ_FILE	convert/process_in_edge.cpp	/^    READ_FILE = 0,$/;"	e	enum:__anon1	file:
+SYSLIBS	Makefile	/^SYSLIBS = -L\/usr\/local\/lib -L\/usr\/lib  -lboost_system -lboost_program_options -lboost_thread -lz -lrt -lm -lpthread$/;"	m
+TEST_OBJS	Makefile	/^TEST_OBJS= $(addprefix $(OBJECT_DIR)\/, $(TEST_SRC))$/;"	m
+TEST_SRC	Makefile	/^TEST_SRC = test.o$/;"	m
+TEST_TARGET	Makefile	/^TEST_TARGET=$(BINARY_DIR)\/test$/;"	m
+VERT_BUFFER_LEN	headers/convert.h	15;"	d
+WRITE_FILE	convert/process_in_edge.cpp	/^    WRITE_FILE$/;"	e	enum:__anon1	file:
+__CONVERT_H__	headers/convert.h	10;"	d
+__OPTIONS_UTILS_CONVERT_H__	headers/options_utils_convert.h	13;"	d
+buf	convert/process_in_edge.cpp	/^char * buf;$/;"	v
+buf1	convert/process_in_edge.cpp	/^struct tmp_in_edge * buf1, *buf2;$/;"	v	typeref:struct:tmp_in_edge
+buf2	convert/process_in_edge.cpp	/^struct tmp_in_edge * buf1, *buf2;$/;"	v	typeref:struct:
+convert	headers/convert.h	/^namespace convert$/;"	n
+current_buf_size	convert/process_in_edge.cpp	/^u64_t current_buf_size;$/;"	v
+current_file_id	convert/process_in_edge.cpp	/^u32_t current_file_id;$/;"	v
+desc	headers/options_utils_convert.h	/^boost::program_options::options_description desc;$/;"	v
+desc_file	convert/convert.cpp	/^std::fstream desc_file;$/;"	v
+dest_vert	headers/convert.h	/^        unsigned int dest_vert;$/;"	m	struct:convert::edge
+dest_vert	headers/convert.h	/^        unsigned int dest_vert;$/;"	m	struct:convert::old_edge
+dest_vert	headers/convert.h	/^        unsigned int dest_vert;$/;"	m	struct:convert::out_edge_with_weight
+dest_vert	headers/convert.h	/^        unsigned int dest_vert;$/;"	m	struct:convert::out_edge_without_weight
+dest_vert	headers/convert.h	/^        unsigned int dest_vert;$/;"	m	struct:convert::tmp_in_edge
+dest_vert	headers/convert.h	/^        unsigned int dest_vert;$/;"	m	struct:convert::type2_edge
+do_io_work	convert/process_in_edge.cpp	/^void do_io_work(const char *file_name_in, u32_t operation, char* buf, u64_t offset_in, u64_t size_in)$/;"	f
+dst_vert	convert/process_edgelist.cpp	/^unsigned int src_vert, dst_vert;$/;"	v
+each_buf_len	convert/process_in_edge.cpp	/^u64_t each_buf_len;$/;"	v
+each_buf_size	convert/process_in_edge.cpp	/^u64_t each_buf_size; \/\/How many edges can be stored in this buf$/;"	v
+edge	headers/convert.h	/^    struct edge$/;"	s	namespace:convert
+edge_buf_for_sort	convert/process_in_edge.cpp	/^struct tmp_in_edge * edge_buf_for_sort;$/;"	v	typeref:struct:tmp_in_edge
+edge_file	convert/process_edgelist.cpp	/^int edge_file;$/;"	v
+edge_weight	headers/convert.h	/^        float edge_weight;$/;"	m	struct:convert::edge
+edge_weight	headers/convert.h	/^        float edge_weight;$/;"	m	struct:convert::old_edge
+edge_weight	headers/convert.h	/^        float edge_weight;$/;"	m	struct:convert::out_edge_with_weight
+file_len	convert/process_in_edge.cpp	/^u64_t *file_len;$/;"	v
+flush_buffer_to_file	convert/process_edgelist.cpp	/^int flush_buffer_to_file( int fd, char* buffer, unsigned int size )$/;"	f
+get_adjline	convert/process_adjlist.cpp	/^char *get_adjline()$/;"	f
+hook_for_merge	convert/process_in_edge.cpp	/^void hook_for_merge()$/;"	f
+in	convert/process_edgelist.cpp	/^FILE * in;$/;"	v
+in_edge	headers/convert.h	/^    struct in_edge$/;"	s	namespace:convert
+in_edge_buffer	convert/process_in_edge.cpp	/^struct in_edge in_edge_buffer[EDGE_BUFFER_LEN];$/;"	v	typeref:struct:in_edge
+in_edge_fd	convert/process_in_edge.cpp	/^FILE *in_edge_fd;$/;"	v
+in_name_file	convert/process_in_edge.cpp	/^const char * in_name_file;$/;"	v
+in_vert	headers/convert.h	/^        unsigned int in_vert;$/;"	m	struct:convert::in_edge
+in_vert_buffer	convert/process_in_edge.cpp	/^struct vert_index in_vert_buffer[VERT_BUFFER_LEN];$/;"	v	typeref:struct:vert_index
+init_max_vertex_id	convert/convert.cpp	/^void init_max_vertex_id()$/;"	f
+line_buffer	convert/process_edgelist.cpp	/^char line_buffer[MAX_LINE_LEN];$/;"	v
+line_no	convert/process_edgelist.cpp	/^unsigned long long line_no=0;$/;"	v
+main	convert/convert.cpp	/^int main( int argc, const char**argv)$/;"	f
+map_anon_memory	convert/process_in_edge.cpp	/^void *map_anon_memory( u64_t size,$/;"	f
+max_out_edges	convert/convert.cpp	/^unsigned long max_out_edges = 0;$/;"	v
+max_vertex_id	convert/convert.cpp	/^unsigned int min_vertex_id=100000, max_vertex_id=0;$/;"	v
+mem_size	convert/convert.cpp	/^unsigned long long mem_size;$/;"	v
+min_vertex_id	convert/convert.cpp	/^unsigned int min_vertex_id=100000, max_vertex_id=0;$/;"	v
+num_edges	convert/convert.cpp	/^unsigned long long num_edges=0;$/;"	v
+num_parts	convert/process_in_edge.cpp	/^u32_t num_parts; \/\/init to 0, add by bufs$/;"	v
+num_tmp_files	convert/process_in_edge.cpp	/^u32_t num_tmp_files;$/;"	v
+offset	headers/convert.h	/^        unsigned long long offset;$/;"	m	struct:convert::old_vert_index
+offset	headers/convert.h	/^        unsigned long long offset;$/;"	m	struct:convert::vert_index
+old_edge	headers/convert.h	/^    struct old_edge$/;"	s	namespace:convert
+old_vert_index	headers/convert.h	/^    struct old_vert_index$/;"	s	namespace:convert
+origin_edge_file	convert/process_in_edge.cpp	/^char * origin_edge_file;$/;"	v
+out_desc_file_name	convert/convert.cpp	/^std::string out_desc_file_name; $/;"	v
+out_edge_with_weight	headers/convert.h	/^    struct out_edge_with_weight$/;"	s	namespace:convert
+out_edge_without_weight	headers/convert.h	/^    struct out_edge_without_weight$/;"	s	namespace:convert
+prev_name_tmp_file	convert/process_in_edge.cpp	/^const char * prev_name_tmp_file;$/;"	v
+process_adjlist	convert/process_adjlist.cpp	/^void process_adjlist(const char * input_file_name, $/;"	f
+process_edgelist	convert/process_edgelist.cpp	/^void process_edgelist( const char* input_file_name,$/;"	f
+process_in_edge	convert/process_in_edge.cpp	/^char* process_in_edge(u64_t mem_size,$/;"	f
+produce_random_weight	convert/process_adjlist.cpp	/^float produce_random_weight()$/;"	f
+read_one_edge	convert/process_edgelist.cpp	/^int read_one_edge( void )$/;"	f
+setup_options_convert	headers/options_utils_convert.h	/^static void setup_options_convert(int argc, const char* argv[])$/;"	f
+src_vert	convert/process_edgelist.cpp	/^unsigned int src_vert, dst_vert;$/;"	v
+src_vert	headers/convert.h	/^        unsigned int src_vert;$/;"	m	struct:convert::old_edge
+src_vert	headers/convert.h	/^        unsigned int src_vert;$/;"	m	struct:convert::tmp_in_edge
+tmp_in_edge	headers/convert.h	/^    struct tmp_in_edge$/;"	s	namespace:convert
+tmp_out_dir	convert/process_in_edge.cpp	/^char * tmp_out_dir;$/;"	v
+total_buf_len	convert/process_in_edge.cpp	/^u64_t total_buf_len;$/;"	v
+total_buf_size	convert/process_in_edge.cpp	/^u64_t total_buf_size;$/;"	v
+type2_edge	headers/convert.h	/^    struct type2_edge$/;"	s	namespace:convert
+type2_edge_buffer	convert/process_edgelist.cpp	/^struct type2_edge type2_edge_buffer[EDGE_BUFFER_LEN];$/;"	v	typeref:struct:type2_edge
+u32_t	convert/process_in_edge.cpp	/^typedef unsigned int u32_t;$/;"	t	file:
+u64_t	convert/process_in_edge.cpp	/^typedef unsigned long long u64_t;$/;"	t	file:
+vert_id	headers/convert.h	/^        unsigned int vert_id;$/;"	m	struct:convert::old_vert_index
+vert_index	headers/convert.h	/^    struct vert_index$/;"	s	namespace:convert
+vm	headers/options_utils_convert.h	/^boost::program_options::variables_map vm;$/;"	v
+write_desc	convert/convert.cpp	/^void write_desc()$/;"	f
