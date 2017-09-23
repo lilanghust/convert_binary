@@ -92,16 +92,17 @@ void process_edgelist( const char* input_file_name,
         {
             //call function to sort and write back
             std::cout << "copy " << current_buf_size << " edges to append to the output in the form of binary." << std::endl;
-            flush_buffer_to_file(edge_file, (char *)buf1, current_buf_size * 2 * sizeof(unsigned int));
+            flush_buffer_to_file(edge_file, (char *)buf1, current_buf_size * sizeof(tmp_in_edge));
             current_buf_size = 0;
         }
     }//while EOF
     if (current_buf_size)
     {
         std::cout << "copy " << current_buf_size << " edges to append to the output in the form of binary." << std::endl;
-        flush_buffer_to_file(edge_file, (char *)buf1, current_buf_size * 2 * sizeof(unsigned int));
+        flush_buffer_to_file(edge_file, (char *)buf1, current_buf_size * sizeof(tmp_in_edge));
         current_buf_size = 0;
     }
+    printf("max %u min %u\n", max_vertex_id, min_vertex_id);
 
     //finished processing
     fclose( in );
