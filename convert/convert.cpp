@@ -86,7 +86,7 @@ int main( int argc, const char**argv)
 	snap_type = vm["type"].as<std::string>();
 	if( snap_type == "edgelist" )
     {
-	    out_edge_file_name = out_dir+ input_file_name +"_binary.txt";
+	    out_edge_file_name = out_dir+ input_file_name +"-binary";
         process_edgelist( input_graph_name.c_str(), 
 				out_edge_file_name.c_str(), 
 				out_dir.c_str(), 
